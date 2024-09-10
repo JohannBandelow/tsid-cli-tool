@@ -1,37 +1,25 @@
 # TSID-CLI-TOOL 
+TSID CLI Tool é uma ferramenta para gerar TSIDs e converter TSIDs do formato Long para String(Crockford Base 32) e vice-versa.
 
+## Dependências
+- Makefile
+- Java 17
 
-## Installation
-
-To install TSID-CLI-TOOL, follow these steps:
-
-1. Open your terminal.
-2. Run the following command:
-
+## Build
+Para buildar só rodar o comando:
+```bash
+    make
 ```
-npm install -g tsid-cli-tool
+
+## Rodar
+Para rodar é necessário utilizar o comando:
+```bash
+ java -jar TsidTool.jar
 ```
+O comando acima ira gerar um TSID (Timestamp atual) e irá imprimir no terminal seu valor em formato long e string.
 
-## Usage
-
-TSID-CLI-TOOL provides a variety of commands to help you with your TypeScript projects. Here are some of the most commonly used commands:
-
-- `tsid init`: Initializes a new TypeScript project.
-- `tsid build`: Builds your TypeScript project.
-- `tsid test`: Runs the tests for your TypeScript project.
-- `tsid lint`: Lints your TypeScript code.
-- `tsid format`: Formats your TypeScript code.
-
-For a complete list of commands and their options, please refer to the [TSID-CLI-TOOL documentation](https://github.com/your-username/tsid-cli-tool).
-
-## Configuration
-
-TSID-CLI-TOOL allows you to configure various aspects of your project. You can create a `tsid.config.json` file in the root of your project to specify your configuration options. Refer to the documentation for more details on available configuration options.
-
-## Contributing
-
-We welcome contributions to TSID-CLI-TOOL! If you find a bug or have a feature request, please open an issue on the [TSID-CLI-TOOL GitHub repository](https://github.com/your-username/tsid-cli-tool). We appreciate your feedback and contributions.
-
-## License
-
-TSID-CLI-TOOL is released under the [MIT License](https://opensource.org/licenses/MIT). Please review the license file for more details.
+Caso queira converter um TSID existente, use o comando:
+```bash
+ java -jar TsidTool.jar {id}
+```
+O comando acima irá converter o id fornecido, o valor de id pode ser a string (Base 32) ou o long.
