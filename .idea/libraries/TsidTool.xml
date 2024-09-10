@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="TsidTool">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/TsidTool.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
