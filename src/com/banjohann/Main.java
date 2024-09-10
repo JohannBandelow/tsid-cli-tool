@@ -27,7 +27,6 @@ public class Main {
     private static void handleFrom(String value) {
         Tsid id = null;
         try {
-            var longId = Long.parseLong(value);
             id = Tsid.from(longId);
         } catch (NumberFormatException e){
             id = Tsid.from(value);
